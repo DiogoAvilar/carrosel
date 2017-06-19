@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Aula carrosel</title>
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<div class="owl-carousel owl-theme">
+<img src="img/alanwalker.jpg" alt="image">
+<img src="img/avicii.jpg" alt="image">
+<img src="img/Bastille.jpg" alt="image">
+<img src="img/Calvin Haris6.jpg" alt="image">
+<img src="img/coldplay.jpg" alt="image">
+<img src="img/Marshmello.jpg" alt="image">
+<img src="img/ed sherran.jpg" alt="image">
+<img src="img/justin bieber.jpg" alt="image">
+<img src="img/despacito.jpg" alt="image">
+<img src="img/martingarrix.jpg" alt="image">
+</div>
+
+
+
+
+
+<script>
+
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
+	
+</body>
+</html>
